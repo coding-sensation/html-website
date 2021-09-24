@@ -1,0 +1,133 @@
+/* search page and title */
+#page .sub,
+#page .title {
+  text-align: left;
+  color: black;
+}
+#page {
+  width: 50%;
+}
+@media screen and (max-width: 1000px) {
+  #page {
+    width: 90%;
+  }
+}
+.title {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: -15px;
+  font-size: 25px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+.title:hover {
+  text-decoration: underline;
+}
+.title a {
+  color: black;
+}
+.title a:hover {
+  color: black;
+}
+/* search page and title */
+
+/* search box */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 200%);
+  color: black;
+  text-align: center;
+}
+
+.searchbox {
+  position: relative;
+  width: 50%;
+  max-width: 60px;
+  border: 3px solid white;
+  border-radius: 0px;
+  transition: 0.4s;
+  background-color: black;
+  margin: 0px auto;
+  padding: 7px;
+  cursor: pointer;
+  display: block;
+}
+.searchbox .search-input {
+  display: block;
+  appearance: none;
+  width: 100%;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: black;
+  color: #000000;
+  font-size: 12px;
+  transition: 0.4s linear;
+}
+.search-sections-container {
+  position: relative;
+  width: 50%;
+  /* border: 3px solid white; */
+  border-radius: 10px;
+  transition: 0.4s;
+  background-color: black;
+  margin: 0px auto;
+  padding: 7px;
+  display: block;
+}
+.search-sections {
+  width: 100%;
+}
+.service {
+  color: white;
+}
+.service:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.searchbox .search-input::placeholder {
+  color: transparent;
+}
+.searchbox {
+  padding: 7px;
+}
+.searchbox .search_icon {
+  position: absolute;
+  right: calc(55px / 2);
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+}
+
+.searchbox .search_icon path {
+  fill: white;
+  transition: 0.4s linear;
+}
+.searchbox:focus-within {
+  /* max-width: 60px; */
+  max-width: 35%;
+}
+.searchbox:focus-within .search-input {
+  background-color: black;
+  color: white;
+  padding-right: 50px;
+
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+.searchbox:focus-within .search-input::placeholder {
+  color: white;
+  font-family: "Avenir";
+}
+
+.searchbox:focus-within .search_icon path {
+  fill: white;
+}
+/* search box */

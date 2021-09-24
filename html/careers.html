@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <link rel="icon" href="../images/cs_white.png" sizes="144×144" type="image/png" />
+    <link rel="stylesheet" href="../css/careers.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+
+<div class='header'>
+    <li><a href='../index.html' class='text-dark'>Home</a></li>
+    <li><a href='./about.html' class='text-dark'>About</a></li>
+    <li><a href='./careers.html' class='text-dark'>Careers</a></li>
+</div>
+
+
+
+
+<div class='landing-careers'>
+    <div class="wrapper">
+        <header class="main_header">
+            <div class="logo">
+                <a href='../index.html'><img src='../images/logos/black.png' alt="Logo"></a>
+                <h1>WE'RE HIRING VOLUNTEERS</h1>
+            </div>
+            <nav class='nav' style='margin:0 auto; display:block;'>
+                <a class='current'>All Jobs</a>
+                <a href='#'>Full-Time</a>
+                <a href='#'>Part-Time</a>
+            </nav>
+        </header>
+        <ul id='time'>   
+                 
+        </ul>
+    </div>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+<!-- <div id='date'>Summer 2021</div> <a href="mailto:thecodingsensation@gmail.com?subject=Full-Stack Web Developer Position&body=Hello,%0D%0A%0D%0AI would like to be considered for the Full-Stack Web Developer position at Coding Sensation.%0D%0A%0D%0AFirst Name:%0D%0A%0D%0ALast Name:%0D%0A%0D%0AEmail Address:%0D%0A%0D%0APhone Number (optional):%0D%0A%0D%0A Date of Birth (MM/DD/YYYY):%0D%0A%0D%0AAge (optional):%0D%0A%0D%0AGender:%0D%0A%0D%0ACountry of Residence:%0D%0A%0D%0A Current University: %0D%0A%0D%0A Major: %0D%0A%0D%0A Graduation Year: %0D%0A%0D%0A Position: Full-Stack Web Developer%0D%0A%0D%0ADuration: Full-time%0D%0A%0D%0A Please attach your resume or CV.%0D%0A%0D%0ABy sending us this email, you agree to our Privacy Policy.%0D%0A%0D%0A https://codingsensation.com/html/legal">
+-->
+ 
+
+
+    <style>
+        .header li a {
+            color: black;
+        }
+        .landing-careers {
+            background: url("../images/bg/white.png") center center no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+    
+<!-- <script src='../javascript/script.js'></script> -->
+
+
+
+<script>
+
+
+
+    function clickedJob(id) {
+        d3.json("../jobs.json").then(function (jobChosen) {
+            for (var key in jobChosen) {
+                if (jobChosen.hasOwnProperty(key) && key === id) {
+                    var description_info = jobChosen[key]
+                    localStorage.setItem('description_info', JSON.stringify(description_info));
+                    window.location = "./description.html"
+                }
+            }
+        })
+    }
+
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+d3.json("../jobs.json").then(function (jobsToAdd) {
+    for (var key in jobsToAdd) {
+        if (jobsToAdd.hasOwnProperty(key)){
+            document.getElementById('time').innerHTML += "<br><a onclick='clickedJob(this.id)' id='" + key + "'><li class='listing m-auto d-flex' style='align-items: center; vertical-align: middle;'><div class='image_wrapper'> <img src='../images/logos/black.png' alt=''> </div><div class='info'> <span class='job_title'>" + jobsToAdd[key].title + " </span> <span class='job_info'> " + jobsToAdd[key].main_info.time + " <span>&bull; </span> " + jobsToAdd[key].main_info.location + " <span> &bull;</span> " + jobsToAdd[key].main_info.salary + " <span style='float:right;'></span> </span> </div></li></a>"
+        }
+    }
+})
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+// DO NOT EDIT
+
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>

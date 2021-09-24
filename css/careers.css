@@ -1,0 +1,189 @@
+* {
+  font-family: "Avenir";
+}
+.wrapper {
+  width: 750px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+.main_header {
+  margin: 5em 0 3em 0;
+}
+
+.logo img {
+  width: 100px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.logo h1 {
+  text-align: center;
+  margin: 0 0 0 0em;
+  text-transform: uppercase;
+  font-size: 1.35em;
+  color: black;
+}
+.logo span {
+  font-weight: 400;
+}
+.nav {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1.75em;
+}
+.nav a {
+  color: black;
+  margin-left: 1em;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: black;
+}
+.current {
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+#time {
+  width: 100%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+#time::after {
+  content: " ";
+  width: 2px;
+  background: 3px black;
+  height: 75%;
+  /* vertical line for careers.html, height above should be changed to 90% after 4 jobs are added */
+  /* vertical line for careers.html, height above should be changed to 100% after 14 jobs are added */
+  top: 3em;
+  left: 3em;
+  position: absolute;
+  z-index: 0;
+}
+#time a {
+  text-decoration: none;
+}
+#time .listing {
+  background: white;
+  border: 2px solid black;
+  border-radius: 0.6em;
+  padding: 1em;
+  position: relative;
+  display: table;
+  width: 94%;
+  z-index: 1;
+  margin-bottom: 1.5em;
+}
+#time .listing img,
+#time .listing .info,
+#time .listing .job_type {
+  color: gray;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 0.9em;
+}
+#time .listing .image_wrapper {
+  width: 60px;
+}
+#time .listing .image_wrapper img {
+  width: 60px;
+  border: 2px solid black;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.25em;
+}
+
+#time .listing .info {
+  line-height: 1.25;
+  width: 640px;
+  padding-left: 25px;
+}
+#time .listing .job_title {
+  font-weight: 700;
+  color: black;
+  font-size: 1.5em;
+}
+#time .listing .job_info {
+  font-weight: 700;
+  color: grey;
+  font-size: 0.9em;
+  display: block;
+}
+#time .listing .job_info span {
+  margin: 0 0.75em;
+}
+#time .listing .job_type {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  position: relative;
+  font-weight: 700;
+  white-space: nowrap;
+  padding-top: 0.6em;
+  width: 100%;
+}
+.full_time {
+  float: right;
+}
+.listing {
+  transition: all 0.3s ease-in-out;
+}
+.listing:hover {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.2);
+}
+#date,
+#date1 {
+  display: inline-block;
+  text-align: center;
+  background: white;
+  z-index: 2;
+  width: 150px;
+  border: 2px solid black;
+  font-weight: 700;
+  border-radius: 0.5em;
+  position: relative;
+  padding: 1em;
+  margin: 5em 0 2em 1.5em;
+  white-space: nowrap;
+  font-size: 0.85em;
+}
+
+@media only screen and (max-width: 768px) {
+  #time .listing .job_type {
+    display: none;
+  }
+  #time .listing .image_wrapper {
+    margin-right: 1em;
+  }
+  #time .listing .image_wrapper img {
+    width: 50px;
+  }
+  #time .listing .info {
+    width: 100%;
+    padding: 0.4em 0 0 0;
+  }
+  #time .listing .info .job_title {
+    font-size: 1.25em;
+  }
+  #time .listing {
+    width: 100%;
+  }
+  #time .listing .info {
+    font-size: 0.75em;
+  }
+  #time .listing .job_info {
+    font-size: 0.75em;
+  }
+}

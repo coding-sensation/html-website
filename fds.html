@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moving planet - speed coding</title>
+    <!--<link rel="stylesheet" href="styles.css"> -->
+</head>
+
+
+<style>
+    @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin-negative {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+body {
+    background-color: black;
+}
+.planetPosition {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.far-far-far-far-far-far-far-far-far-far-far-orbit {
+    width: 600%;
+    height: 600%;
+    background-color: rgba(255,255,255, 0.60);
+    position: absolute;
+    border-radius: 50%;
+    animation: 4s rotate1 linear  ;
+}
+.far-far-far-far-far-far-far-far-far-far-orbit {
+    width: 550%;
+    height: 550%;
+    background-color: rgba(255,255,255, 0.45);
+    position: absolute;
+    border-radius: 50%;
+    animation: 4s rotate1 linear  ;
+}
+.far-far-far-far-far-far-far-far-far-orbit {
+    width: 500%;
+    height: 500%;
+    background-color: rgba(255,255,255, 0.35);
+    position: absolute;
+    border-radius: 50%;
+    animation: 4s rotate1 linear  ;
+}
+.far-far-far-far-far-far-far-far-orbit {
+    width: 450%;
+    height: 450%;
+    background-color: rgba(255,255,255, 0.25);
+    position: absolute;
+    border-radius: 50%;
+    animation: 4s rotate1 linear  ;
+}
+.far-far-far-far-far-far-far-orbit {
+    width: 400%;
+    height: 400%;
+    background-color: rgba(255,255,255, 0.15);
+    position: absolute;
+    border-radius: 50%;
+    animation: 4s rotate1 linear  ;
+}
+.far-far-far-far-far-far-orbit {
+    width: 350%;
+    height: 350%;
+    background-color: rgba(255,255,255, 0.20);
+    position: absolute;
+    border-radius: 50%;
+    animation: 4s rotate1 linear  ;
+}
+.far-far-far-far-far-orbit {
+    width: 325%;
+    height: 325%;
+    background-color: rgba(255,255,255, 0.25);
+    position: absolute;
+    border-radius: 50%;
+    animation: 4s rotate2 linear  ;
+}
+.far-far-far-far-orbit {
+    width: 275%;
+    height: 275%;
+    background-color: rgba(255,255,255, 0.30);
+    position: absolute;
+     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 50%;
+    animation: 4s rotate1 linear  ;
+}
+.far-far-far-orbit {
+    width: 225%;
+    height: 225%;
+    background-color: rgba(255,255,255, 0.45);
+    position: absolute;
+     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 50%;
+        animation: 4s rotate2 linear  ;
+}
+.far-far-orbit {
+    width: 175%;
+    height: 175%;
+    position: absolute;
+    background-color: rgba(255,255,255, 0.60);
+     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 50%;
+    animation: 4s rotate1 linear  ;
+
+}
+/* .far-orbit {
+    width: 125%;
+    height: 125%;
+    background-color: rgba(255,255,255, 0.85);
+    position: absolute;
+     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 50%;
+        animation: 4s rotate2 linear  ;
+} */
+/* .near-orbit {
+    width: 75%;
+    height: 75%;
+    background-color: rgba(255,255,255, 1);
+    position: absolute;
+    border-radius: 50%;
+    animation: 4s rotate1 linear  ;
+
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+} */
+
+.mainLogo{
+   position: absolute;
+    top: 50%;
+    width:50%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+}
+.mainPlanet{
+   position: absolute;
+    top: 50%;
+    width:100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mainTitle{
+    position: absolute;
+    top: -100%;
+    width:50%;
+    font-size:80px;
+    left: 120%;
+    font-family: "Avenir";
+    transform: translate(-50%, -50%);
+}
+img {
+    width: 15%;
+}
+
+.smallPlanet {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.mars {
+    animation: spin 14s linear 0s ;
+}
+.saturn {
+    animation: spin-negative 7s linear 0s ;
+}
+.planet-x {
+    animation: spin 9s linear 0s ;
+}
+.planet-x img {
+    top: -100px;
+    width:175px;
+    transform: rotate(70deg);
+    position: absolute;
+}
+
+/*YouTUbe styles*/
+.youtube {
+    text-align:center;
+    color:white;   
+}
+.youtube a {
+    color:#999;
+}
+.er{
+
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 4s turn linear ;
+}
+@keyframes rotate2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes rotate1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes turn {
+    0%{
+        transform: rotate(0deg) scale(0.1);
+    }
+    100%{
+        transform: rotate(360deg) scale(1);
+    }
+}
+</style>
+
+<body>
+  <div class='er'>  
+    <div class="planetPosition">
+        <div class="far-far-far-far-far-far-far-far-far-far-far-orbit"></div>
+        <div class="far-far-far-far-far-far-far-far-far-far-orbit"></div>
+        <div class="far-far-far-far-far-far-far-far-far-orbit"></div>
+        <div class="far-far-far-far-far-far-far-far-orbit"></div>
+        <div class="far-far-far-far-far-far-far-orbit"></div>
+        <div class="far-far-far-far-far-far-orbit"></div>
+        <div class="far-far-far-far-orbit"></div>
+        <div class="far-far-far-orbit"></div>
+        <div class="far-far-orbit">
+           
+        </div>
+        <div class="far-orbit"></div>
+        <div class="near-orbit"></div>
+        <div class='mainLogo'>
+<img src="images/Cs.png" class='mainPlanet' style='display: inline-block;' alt="" />
+<h1 class='mainTitle'>TRIP</h1>
+        </div>
+         
+       
+            <div class="smallPlanet planet-x">
+                <img src="https://www.freeiconspng.com/thumbs/rocket-png/red-rocket-png-5.png">
+            </div>
+    </div>
+    </div>
+</body>
+
+
+
+
+
+</html>

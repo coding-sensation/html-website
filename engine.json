@@ -1,0 +1,152 @@
+{
+  "content_amount": "10",
+  "quizzes": [
+    {
+      "number": "0",
+      "subtitle": "This Quiz is for beginners who are new to Python. The Quiz focuses on testing your necessary skills on Python operators, variables, functions, string, functions, and lists questions.",
+      "title": "basic quiz",
+      "language": "Python",
+      "type": "Quiz",
+      "uploaded_on": "07/23/2001",
+      "link": "./quiz.html",
+      "secret_title": "basic_quiz",
+      "creator": "Jad Haddad"
+    },
+    {
+      "number": "1",
+      "subtitle": "This Variables and Data Types Quiz provide questions to get familiar with different data types and variable scope, assignment, and casting.",
+      "title": "advanced quiz",
+      "language": "Python",
+      "type": "Quiz",
+      "uploaded_on": "07/24/2002",
+      "link": "./quiz.html",
+      "secret_title": "advanced_quiz",
+      "creator": "Jad Haddad"
+    }
+  ],
+  "projects": [
+    {
+      "number": "2",
+      "subtitle": "This Quiz is for beginners who are new to Python. The Quiz focuses on testing your necessary skills on Python operators, variables, functions, string, functions, and lists questions.",
+      "title": "covid-19 tracker",
+      "language": "JavaScript",
+      "type": "Project",
+      "uploaded_on": "07/23/2001",
+      "link": "https://tracorona.live",
+      "secret_title": "Covid 19 Tracker Live Stats Cases Deaths Recovered",
+      "creator": "Talal El Zeini"
+    },
+    {
+      "number": "3",
+      "subtitle": "This Variables and Data Types Quiz provide questions to get familiar with different data types and variable scope, assignment, and casting.",
+      "title": "quiz generator",
+      "language": "JavaScript",
+      "type": "Project",
+      "uploaded_on": "07/24/2002",
+      "link": "https://talalzeini.github.io/quiz-generator/",
+      "secret_title": "quiz generator",
+      "creator": "Talal El Zeini"
+    },
+    {
+      "number": "4",
+      "subtitle": "This Variables and Data Types Quiz provide questions to get familiar with different data types and variable scope, assignment, and casting.",
+      "title": "math quiz",
+      "language": "JavaScript",
+      "type": "Project",
+      "uploaded_on": "07/24/2002",
+      "link": "https://talalzeini.github.io/math-quiz/",
+      "secret_title": "math quiz",
+      "creator": "Talal El Zeini"
+    },
+    {
+      "number": "5",
+      "subtitle": "This Variables and Data Types Quiz provide questions to get familiar with different data types and variable scope, assignment, and casting.",
+      "title": "simple clock",
+      "language": "JavaScript",
+      "type": "Project",
+      "uploaded_on": "07/24/2002",
+      "link": "https://talalzeini.github.io/simple-clock/",
+      "secret_title": "time clock",
+      "creator": "Talal El Zeini"
+    },
+    {
+      "number": "6",
+      "subtitle": "This Variables and Data Types Quiz provide questions to get familiar with different data types and variable scope, assignment, and casting.",
+      "title": "sorting visualizer",
+      "language": "JavaScript",
+      "type": "Project",
+      "uploaded_on": "07/24/2002",
+      "link": "https://talalzeini.github.io/sorting-visualizer/",
+      "secret_title": "sorting sort",
+      "creator": "Talal El Zeini"
+    },
+    {
+      "number": "7",
+      "subtitle": "This Variables and Data Types Quiz provide questions to get familiar with different data types and variable scope, assignment, and casting.",
+      "title": "crypto tracker",
+      "language": "JavaScript",
+      "type": "Project",
+      "uploaded_on": "07/24/2002",
+      "link": "https://talalzeini.github.io/crypto-tracker/",
+      "secret_title": "crypto bitcoin",
+      "creator": "Talal El Zeini"
+    },
+    {
+      "number": "8",
+      "subtitle": "This Variables and Data Types Quiz provide questions to get familiar with different data types and variable scope, assignment, and casting.",
+      "title": "logs tracker",
+      "language": "JavaScript",
+      "type": "Project",
+      "uploaded_on": "07/24/2002",
+      "link": "https://logs-tracker.web.app",
+      "secret_title": "logs calculate math",
+      "creator": "Talal El Zeini"
+    },
+    {
+      "number": "9",
+      "subtitle": "This Variables and Data Types Quiz provide questions to get familiar with different data types and variable scope, assignment, and casting.",
+      "title": "tip calculator",
+      "language": "JavaScript",
+      "type": "Project",
+      "uploaded_on": "07/24/2002",
+      "link": "https://talalzeini.github.io/tip-calculator/",
+      "secret_title": "tip calculator calculate waiter restaurant",
+      "creator": "Talal El Zeini"
+    }
+  ],
+  "posts": [
+    {
+      "number": "10",
+      "subtitle": "This Quiz is for beginners who are new to Python. The Quiz focuses on testing your necessary skills on Python operators, variables, functions, string, functions, and lists questions.",
+      "title": "Hello World!",
+      "language": "Python",
+      "type": "Program",
+      "uploaded_on": "08/30/2021",
+      "link": "https://replit.com/@codingsensation/Hello-World-Python#main.py",
+      "secret_title": "hello world python",
+      "creator": "Talal Zeini"
+    },
+    {
+      "number": "11",
+      "subtitle": "This Variables and Data Types Quiz provide questions to get familiar with different data types and variable scope, assignment, and casting.",
+      "title": "Hello World!",
+      "language": "Java",
+      "type": "Program",
+      "uploaded_on": "08/30/2021",
+      "link": "https://replit.com/@codingsensation/Hello-World-Java#Main.java",
+      "secret_title": "hello world java",
+      "creator": "Jad Haddad"
+    },
+    {
+      "number": "12",
+      "subtitle": "This Variables and Data Types Quiz provide questions to get familiar with different data types and variable scope, assignment, and casting.",
+      "title": "Hello World!",
+      "language": "C",
+      "type": "Program",
+      "uploaded_on": "08/30/2021",
+      "link": "https://replit.com/@codingsensation/Hello-World-C#main.c",
+      "secret_title": "hello world c",
+      "creator": "Yara Hammami"
+    }
+  ]
+}

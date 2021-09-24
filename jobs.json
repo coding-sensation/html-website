@@ -1,0 +1,73 @@
+{
+  "zero": {
+    "title": "Software Engineer",
+    "main_info": {
+      "time": "Full-time",
+      "location": "Location: Remote",
+      "salary": "Unpaid"
+    },
+    "summary": {
+      "first": "The Coding Sensation Development team is looking for passionate, highly talented, self-driven, and proven software engineers to join our team!",
+      "second": "Are you passionate about creating amazing projects that surprise and delight? Do you have a natural curiosity for learning new technologies? If you answered yes to both questions, the Coding Sensation team wants to hear from you."
+    },
+    "responsibilities": {
+      "one": "Demonstrate proficiency in programming, and software engineering.",
+      "two": "Complete tasks on-schedule by exercising strong judgement and problem-solving skills.",
+      "three": "Suggest and implement improvements to our development processes.",
+      "four": "Work collaboratively and communicate ideas clearly within a team.",
+      "five": "Attend weekly meetings on time."
+    },
+    "requirements": {
+      "one": "Strong programming skills, preferably with C++ or Python.",
+      "two": "Familiar with HTML, CSS, and JavaScript.",
+      "three": "Excellent grasp of fundamental computer science concepts.",
+      "four": "Able to learn and quickly work with new and unfamiliar technologies.",
+      "five": "Strong debugging and problem-solving skills.",
+      "six": "Able to stay focused, prioritize your work, and manage time efficiently.",
+      "seven": "Exceptional attention to detail.",
+      "eight": "Good verbal and written communication skills.",
+      "nine": "Able to work independently with minimal supervision."
+    },
+    "preferred": {
+      "one": "Experienced with React.",
+      "two": "Familiar with Git, SQL, and NoSQL databases."
+    },
+    "role_number": "Role Number ID: SWE0112202020"
+  },
+
+  "one": {
+    "title": "Web Developer",
+    "main_info": {
+      "time": "Full-time",
+      "location": "Location: Remote",
+      "salary": "Unpaid"
+    },
+    "summary": {
+      "first": "The Coding Sensation Development team is looking for passionate, highly talented, self-driven, and proven software engineers to join our team!",
+      "second": "Are you passionate about creating amazing projects that surprise and delight? Do you have a natural curiosity for learning new technologies? If you answered yes to both questions, the Coding Sensation team wants to hear from you."
+    },
+    "responsibilities": {
+      "one": "Demonstrate proficiency in programming, and software engineering.",
+      "two": "Complete tasks on-schedule by exercising strong judgement and problem-solving skills.",
+      "three": "Suggest and implement improvements to our development processes.",
+      "four": "Work collaboratively and communicate ideas clearly within a team.",
+      "five": "Attend weekly meetings on time."
+    },
+    "requirements": {
+      "one": "Strong programming skills, preferably with C++ or Python.",
+      "two": "Familiar with HTML, CSS, and JavaScript.",
+      "three": "Excellent grasp of fundamental computer science concepts.",
+      "four": "Able to learn and quickly work with new and unfamiliar technologies.",
+      "five": "Strong debugging and problem-solving skills.",
+      "six": "Able to stay focused, prioritize your work, and manage time efficiently.",
+      "seven": "Exceptional attention to detail.",
+      "eight": "Good verbal and written communication skills.",
+      "nine": "Able to work independently with minimal supervision."
+    },
+    "preferred": {
+      "one": "Experienced with React.",
+      "two": "Familiar with Git, SQL, and NoSQL databases."
+    },
+    "role_number": "Role Number ID: WEB0212202020"
+  }
+}
