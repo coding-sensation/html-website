@@ -1,4 +1,11 @@
 /* search page and title */
+/* TO BE MOVED TO STYLE.CSS AND DELETED SOON  */
+/* TO BE MOVED TO STYLE.CSS AND DELETED SOON  */
+/* TO BE MOVED TO STYLE.CSS AND DELETED SOON  */
+/* TO BE MOVED TO STYLE.CSS AND DELETED SOON  */
+/* TO BE MOVED TO STYLE.CSS AND DELETED SOON  */
+/* TO BE MOVED TO STYLE.CSS AND DELETED SOON  */
+/* TO BE MOVED TO STYLE.CSS AND DELETED SOON  */
 #page .sub,
 #page .title {
   text-align: left;
@@ -131,3 +138,61 @@
   fill: white;
 }
 /* search box */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  padding-top: 200px;
+  left: 37.5%;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  padding: 20px;
+  border: 2px solid #888;
+  width: 100%;
+}
+
+/* close button */
+.close {
+  color: #aaaaaa;
+  float: center;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* close button */
+
+/* smaller screen modal */
+@media screen and (max-width: 900px) {
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 200px;
+    left: 12.5%;
+    top: 0;
+    width: 75%;
+    height: 100%;
+    overflow: auto;
+  }
+}

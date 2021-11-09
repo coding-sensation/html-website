@@ -1,6 +1,5 @@
 {
   "basic_quiz": {
-    
     "questions": [
       {
         "question": "1 * 1 = ?",
@@ -33,6 +32,96 @@
         }
       },
 
+      {
+        "question": "1 * 3 = ?",
+        "answers": {
+          "text_one": "4",
+          "text_two": "1",
+          "text_three": "2",
+          "text_four": "3"
+        },
+        "results": {
+          "correct_one": "false",
+          "correct_two": "false",
+          "correct_three": "false",
+          "correct_four": "true"
+        }
+      },
+      {
+        "question": "1 * 4 = ?",
+        "answers": {
+          "text_one": "2",
+          "text_two": "3",
+          "text_three": "4",
+          "text_four": "1"
+        },
+        "results": {
+          "correct_one": "false",
+          "correct_two": "false",
+          "correct_three": "true",
+          "correct_four": "false"
+        }
+      },
+      {
+        "question": "1 * 1 = ?",
+        "answers": {
+          "text_one": "3",
+          "text_two": "4",
+          "text_three": "1",
+          "text_four": "2"
+        },
+        "results": {
+          "correct_one": "false",
+          "correct_two": "false",
+          "correct_three": "true",
+          "correct_four": "false"
+        }
+      },
+      {
+        "question": "1 * 2 = ?",
+        "answers": {
+          "text_one": "1",
+          "text_two": "2",
+          "text_three": "3",
+          "text_four": "4"
+        },
+        "results": {
+          "correct_one": "false",
+          "correct_two": "true",
+          "correct_three": "false",
+          "correct_four": "false"
+        }
+      },
+      {
+        "question": "1 * 3 = ?",
+        "answers": {
+          "text_one": "4",
+          "text_two": "1",
+          "text_three": "2",
+          "text_four": "3"
+        },
+        "results": {
+          "correct_one": "false",
+          "correct_two": "false",
+          "correct_three": "false",
+          "correct_four": "true"
+        }
+      },
+      {
+        "question": "1 * 4 = ?",
+        "answers": {
+          "text_one": "2",
+          "text_two": "3",
+          "text_three": "4",
+          "text_four": "1"
+        },
+        "results": {
+          "correct_one": "false",
+          "correct_two": "false",
+          "correct_three": "true",
+          "correct_four": "false"
+        }
+      },
       {
         "question": "1 * 3 = ?",
         "answers": {

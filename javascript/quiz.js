@@ -1,5 +1,5 @@
 
-d3.json("../quiz.json").then(function (quizzes) {
+d3.json("../json/quiz.json").then(function (quizzes) {
  
 const questions = []
 const nextButton = document.getElementById('nextButton');
@@ -22,22 +22,28 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 let shuffledQuestions = 0;
 let currentQuestionIndex = 0;
 
+body.classList.add('white')
+    
+    
 Restart.addEventListener('click', startGame);
 
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
     any++;
-    numberOfQuestions.innerText = any; 
+    numberOfQuestions.innerText = any;
+    body.classList.add('white')
     setNextQuestion()
 })
 
 
 function startGame(){ 
+    body.classList.add('white')
     Restart.classList.add('hide');
+    numberOfQuestions.innerText = '1';
     contentStart.classList.add('show');
     quizTitle.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - .5);
-    console.log(shuffledQuestions)
+    // console.log(shuffledQuestions)
     currentQuestionIndex = 0;
     questionContainerElement.classList.remove('hide');
     score.innerText = 0;
@@ -61,30 +67,34 @@ let b = 0;
 function selectAnswer(e){
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
+    setStatusClass(body, correct)
+    body.classList.remove('white')
     Array.from(answerButtonsElement.children).forEach(button =>{
-        setStatusClass(button, button.dataset.correct)
+        // setStatusClass(button, button.dataset.correct)
         button.disabled = true; 
         if(correct){
             b++;
-            score.innerText = b/4 + " out of 30 ";
+            score.innerText = b/4 + " out of 10";
         }      
     })
     if(shuffledQuestions.length > currentQuestionIndex +1){
-        nextButton.classList.remove('hide');
+        nextButton.classList.remove('hidden');
+        nextButton.disabled = false
     }else{
         Restart.classList.remove('hide')
         results.classList.remove('hide');
         contentStart.classList.add('hide');
         contentStart.classList.remove('show');
-            if((b/4)  <= 15){
+            if((b/4)  <= 5){
                 sucess.innerHTML = "Failure";
                 body.classList.remove('correct')
                 body.classList.add('wrong')
-            }else if((b/4) > 15){
+                body.classList.remove('white')
+            }else if((b/4) > 5){
                 sucess.innerHTML = "Success";
                 body.classList.add('correct')
                 body.classList.remove('wrong')
+                body.classList.remove('white')
             }
     }
 }
@@ -97,8 +107,10 @@ function setStatusClass(element, correct){
     if(correct)
     {
         element.classList.add('correct')
+        element.classList.remove('white')
     }else{
         element.classList.add('wrong')
+        element.classList.remove('white')
     }
 }
 
@@ -129,8 +141,9 @@ function showQuestion(question){
 
 
 function resetState(){
-    clearStatusClass(document.body)
-    nextButton.classList.add('hide')
+    clearStatusClass(document.getElementById('body'))
+    nextButton.classList.add('hidden')
+    nextButton.disabled = true
     while(answerButtonsElement.firstChild){
         answerButtonsElement.removeChild
         (answerButtonsElement.firstChild)

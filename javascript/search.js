@@ -11,7 +11,7 @@ function chooseQuiz(id) {
 function showOnlyQuizzes() {
     document.getElementById('page').innerHTML = ""
     document.getElementById('pageTitle').innerHTML = ""
-    d3.json("../engine.json").then(function (data) {
+    d3.json("../json/engine.json").then(function (data) {
     for (let i = 0; i < data.quizzes.length; i++){ 
          document.getElementById('page').innerHTML += "<div class='one-result infoShuffle animated animatedFadeInUp fadeInUp' id='searched" + data.quizzes[i].number + "'><p class='title' id='title" + data.quizzes[i].number + "'><a href='#' onclick='chooseQuiz(this.id)' id='" + data.quizzes[i].title.split(" ")[0] + "_" + data.quizzes[i].title.split(" ")[1] + "' >" + data.quizzes[i].title + "</a></p><div class='text-dark text-left sub mt-2'><span id='language' class='d-inline-block mr-2'>"+ data.quizzes[i].language + "</span><span class='d-inline-block mr-2'>&bull;</span><span id='type' class='d-inline-block mr-2'>" + data.quizzes[i].type + "</span><span class='d-inline-block mr-2'>&bull;</span><span id='uploaded_on' class='d-inline-block mr-2'>Uploaded on " + data.quizzes[i].uploaded_on  +"</span></div><p class='sub mt-1' id='subtitle'>" + data.quizzes[i].subtitle + "<br>Made by <b>" + data.quizzes[i].creator  +"</p></div>"
     }
@@ -21,7 +21,7 @@ function showOnlyQuizzes() {
 function showOnlyProjects() {
     document.getElementById('page').innerHTML = ""
     document.getElementById('pageTitle').innerHTML = ""
-    d3.json("../engine.json").then(function (data) {
+    d3.json("../json/engine.json").then(function (data) {
     for (let i = 0; i < (data.projects.length); i++){
          document.getElementById('page').innerHTML += "<div class='one-result infoShuffle animated animatedFadeInUp fadeInUp' id='searched" + data.projects[i].number + "'><p class='title' id='title" + data.projects[i].number + "'><a href='#' onclick='window.location =" + JSON.stringify(data.projects[i].link) + "'  >" + data.projects[i].title + "</a></p><div class='text-dark text-left sub mt-2'><span id='language' class='d-inline-block mr-2'>"+ data.projects[i].language + "</span><span class='d-inline-block mr-2'>&bull;</span><span id='type' class='d-inline-block mr-2'>" + data.projects[i].type + "</span><span class='d-inline-block mr-2'>&bull;</span><span id='uploaded_on' class='d-inline-block mr-2'>Uploaded on " + data.projects[i].uploaded_on  +"</span></div><p class='sub mt-1' id='subtitle'>" + data.projects[i].subtitle + "<br>Made by <b>" + data.projects[i].creator  +"</p></div>"
     }
@@ -31,7 +31,7 @@ function showOnlyProjects() {
 function showOnlyPosts() {
     document.getElementById('page').innerHTML = ""
     document.getElementById('pageTitle').innerHTML = ""
-    d3.json("../engine.json").then(function (data) {
+    d3.json("../json/engine.json").then(function (data) {
     for (let i = 0; i < (data.posts.length); i++){
          document.getElementById('page').innerHTML += "<div class='one-result infoShuffle animated animatedFadeInUp fadeInUp' id='searched" + data.posts[i].number + "'><p class='title' id='title" + data.posts[i].number + "'><a href='#' onclick='window.location =" + JSON.stringify(data.posts[i].link) + "'  >" + data.posts[i].title + "</a></p><div class='text-dark text-left sub mt-2'><span id='language' class='d-inline-block mr-2'>"+ data.posts[i].language + "</span><span class='d-inline-block mr-2'>&bull;</span><span id='type' class='d-inline-block mr-2'>" + data.posts[i].type + "</span><span class='d-inline-block mr-2'>&bull;</span><span id='uploaded_on' class='d-inline-block mr-2'>Uploaded on " + data.posts[i].uploaded_on  +"</span></div><p class='sub mt-1' id='subtitle'>" + data.posts[i].subtitle + "<br>Made by <b>" + data.posts[i].creator  +"</p></div>"
     }
@@ -104,7 +104,7 @@ function search(strEntered) {
     document.getElementById('pageTitle').innerHTML = ""
       
     
-  d3.json("../engine.json").then(function (data) {
+  d3.json("../json/engine.json").then(function (data) {
     var arrayOfContent = []
     for (var key in data){
           if (data.hasOwnProperty(key)) {

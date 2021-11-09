@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
-<body id="body" class='black'>
+<body>
     <script>         
     var quizPageID = localStorage.getItem('quiz_id')
     if (quizPageID === null) {
@@ -40,13 +40,15 @@
 
     <!-- LANDING STARTS HERE -->
     <!-- LANDING STARTS HERE -->
-    <section class="landing-quiz">
+ 
+   
+    <section class="landing-quiz" id="body">
         <div class="landing-quiz-container">
             <h1 id="quizTitle"></h1>
             <div id="results" class="results hide">
-                <button id="score" class="mainBtns">Score</button>
-                <button id="sucess" class="mainBtns">Result</button>
-                <button id="restart-btn" class="mainBtns">Restart</button>
+                <button id="score" class="resultBtns">Score</button>
+                <button id="sucess" class="resultBtns">Result</button>
+                <button id="restart-btn" class="resultBtns cursor">Restart</button>
             </div>
             <div id="content" class="container hide">
                 <div id="question-container" class="hide">
@@ -60,7 +62,7 @@
                         <button class="ansBtns">Answer 4</button>
                     </div>
                 </div>
-                <button id="nextButton" class="mainBtns hide">Next</button>
+                <button id="nextButton" style='letter-spacing: 2px;' class="ansBtns hidden">Next</button>
             </div>
         </div>
     </section>
