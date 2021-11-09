@@ -11,6 +11,9 @@ html,
 body {
   overflow: auto;
 }
+body {
+  background: #eee;
+}
 *:not(input, textarea) {
   font-family: "Avenir";
   -webkit-touch-callout: none;
@@ -40,7 +43,7 @@ body {
   margin-bottom: 25px;
   padding-top: 75px;
   padding-bottom: 75px;
-  width: 95%;
+  width: 97%;
 }
 .posts-section {
   margin-top: 150px;
@@ -313,9 +316,9 @@ footer {
   font-size: 15px;
 }
 .footer-stuff a {
-  -webkit-text-size-adjust: 100%;
   color: black;
   display: block;
+  margin: 25px auto;
   font-size: 15px;
 }
 .footer-stuff a:hover {
@@ -324,20 +327,18 @@ footer {
 }
 .footer-info a {
   display: block;
+  margin: 25px auto;
   color: black;
 }
-@media (max-width: 700px) {
-  .footer-stuff {
-    text-align: left;
-  }
-  .footer-stuff a {
-    font-size: 13px;
-    color: black;
-    display: block;
-    text-align: left;
-  }
+.footer-info a:hover {
+  color: black;
+  text-decoration: underline;
 }
 @media (max-width: 300px) {
+  .footer-stuff,
+  .footer-stuff a {
+    text-align: left;
+  }
   .footer-info a {
     font-size: 13px;
   }
@@ -917,9 +918,11 @@ footer {
 /* DO NOT EDIT */
 .member-info {
   z-index: -2;
+  margin-top: 25px;
 }
 .member-image img {
   width: 75%;
+  margin-top: 25px;
   border-radius: 5%;
 }
 .member-info h3 {
