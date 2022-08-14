@@ -1,12 +1,4 @@
 // LOADER SCRIPT STARTS HERE
-// LOADER SCRIPT STARTS HERE
-// LOADER SCRIPT STARTS HERE
-// DO NOT EDIT
-// DO NOT EDIT
-// DO NOT EDIT
-// DO NOT EDIT
-// DO NOT EDIT
-// DO NOT EDIT
 setTimeout(function () {
   localStorage.clear();
 }, 120000);
@@ -35,14 +27,6 @@ function displayFunction() {
     // document.getElementById("loading-container").style.display = "none";
   }
 }
-// DO NOT EDIT
-// DO NOT EDIT
-// DO NOT EDIT
-// DO NOT EDIT
-// DO NOT EDIT
-// DO NOT EDIT
-// LOADER SCRIPT ENDS HERE
-// LOADER SCRIPT ENDS HERE
 // LOADER SCRIPT ENDS HERE
 
 
