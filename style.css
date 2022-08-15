@@ -12,7 +12,7 @@ body {
   overflow: auto;
 }
 body {
-  background: #eee;
+  background: #ffffff;
 }
 *:not(input, textarea) {
   font-family: "Avenir";
@@ -21,6 +21,11 @@ body {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 ::-moz-selection {
   color: white;
@@ -35,26 +40,20 @@ body {
 }
 .footer-section {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
   border-radius: 0px;
   text-align: center;
-  background-color: white;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding-top: 25px;
-  width: 97%;
+  width: 100%;
+
 }
 .section {
   display: block;
   margin: 0 auto;
   border-radius: 0px;
   text-align: center;
-  background-color: white;
+  background-color: #ffffff;
   margin-top: 25px;
-  margin-bottom: 25px;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  width: 97%;
+  width: 100%;
 }
 
 .posts-section {
@@ -76,9 +75,8 @@ body {
   margin: 0 auto;
 }
 .homeTitle{
-  white-space: nowrap;
-  color: black;
-  font-size: 35px;
+  color: white;
+  font-size: 50px;
   text-align: center;
   font-weight: bold;
   display: block;
@@ -87,11 +85,13 @@ body {
   background:rgba(255,255,255,0.5)'
 }
 .homeParagraph{
-  margin:50px auto; font-size: 20px;background:rgba(255,255,255,0.65)
+  margin:0 auto; 
+  font-size: 20px;
+  color:white;
 }
 .section-title {
   color: black;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
   display: block;
   text-align: center;
@@ -117,6 +117,8 @@ body {
 }
 .section-line {
   width: 25%;
+  margin:0 auto;
+  display:block
 }
 .button {
   font-weight: bold;
@@ -140,7 +142,8 @@ body {
   margin-bottom: 35px;
   display: block;
   text-align: center;
-  width: 75%;
+  width: 50%;
+  font-weight: normal;
   line-height: 35px;
 }
 @media (max-width: 700px) {
@@ -266,7 +269,7 @@ body {
 }
 .header img {
   cursor: pointer;
-  width: 40px;
+  width: 80px;
   margin-top: 10px;
   z-index: -1;
   border-radius: 5px;
@@ -433,25 +436,18 @@ footer {
 
 
 
-
-.scroll-container {
-  position: relative;
-  left: 50%;
-  top: 60%;
-  transform: translate(-50%, 750%);
-}
 .scroll-down-black {
   text-align: center;
   font-size: 20px;
-  z-index: 0;
+  z-index: 1;
   text-decoration: none;
   text-shadow: 0;
   margin: 0 auto;
   display: block;
   width: 13px;
   height: 13px;
-  border-bottom: 4px solid black;
-  border-right: 4px solid black;
+  border-bottom: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
   animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
 .scroll-down-white {
@@ -537,9 +533,9 @@ footer {
   overflow: hidden;
 }
 .loading-container {
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   position: fixed;
-  background: url("../images/bg/black.png") center center no-repeat;
+  background: url("images/bg/bg.jpg") center center no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -597,54 +593,6 @@ footer {
     transform: rotate(-360deg);
   }
 }
-
-
-
-
-
-
-/* LOADER SECTION ENDS HERE */
-/* LOADER SECTION ENDS HERE */
-/* LOADER SECTION ENDS HERE */
-/* 0 */
-/* 1 */
-/* 2 */
-/* 3 */
-/* 4 */
-/* 5 */
-/* 6 */
-/* 7 */
-/* 8 */
-/* 9 */
-/* 10 */
-/* 11 */
-/* 12 */
-/* 13 */
-/* 14 */
-/* 15 */
-/* 16 */
-/* 17 */
-/* 18 */
-/* 19 */
-/* 20 */
-/* 21 */
-/* 22 */
-/* 23 */
-/* 24 */
-/* 25 */
-/* 26 */
-/* 27 */
-/* 28 */
-/* 29 */
-/* POSTS SECTION STARTS HERE */
-/* POSTS SECTION STARTS HERE */
-/* POSTS SECTION STARTS HERE */
-
-
-
-
-
-
 .post {
   width: 32.2%;
   background: black;
@@ -665,61 +613,13 @@ footer {
     width: 25%;
   }
 }
-
-
-
-
-
-
-/* POSTS SECTION ENDS HERE */
-/* POSTS SECTION ENDS HERE */
-/* POSTS SECTION ENDS HERE */
-/* 0 */
-/* 1 */
-/* 2 */
-/* 3 */
-/* 4 */
-/* 5 */
-/* 6 */
-/* 7 */
-/* 8 */
-/* 9 */
-/* 10 */
-/* 11 */
-/* 12 */
-/* 13 */
-/* 14 */
-/* 15 */
-/* 16 */
-/* 17 */
-/* 18 */
-/* 19 */
-/* 20 */
-/* 21 */
-/* 22 */
-/* 23 */
-/* 24 */
-/* 25 */
-/* 26 */
-/* 27 */
-/* 28 */
-/* 29 */
-/* LANDING SECTION STARTS HERE */
-/* LANDING SECTION STARTS HERE */
-/* LANDING SECTION STARTS HERE */
-
-
-
-
-
-
 .landing-page-container {
   min-height: 600px;
   height: calc(100vh);
   position: relative;
 }
 .landing {
-  background: url("../images/bg/white.png") center center no-repeat;
+  background: url("images/bg/black.png") center center no-repeat;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -737,54 +637,6 @@ footer {
   text-align: center;
   width: 500px;
 }
-
-
-
-
-
-
-/* LANDING SECTION ENDS HERE */
-/* LANDING SECTION ENDS HERE */
-/* LANDING SECTION ENDS HERE */
-/* 0 */
-/* 1 */
-/* 2 */
-/* 3 */
-/* 4 */
-/* 5 */
-/* 6 */
-/* 7 */
-/* 8 */
-/* 9 */
-/* 10 */
-/* 11 */
-/* 12 */
-/* 13 */
-/* 14 */
-/* 15 */
-/* 16 */
-/* 17 */
-/* 18 */
-/* 19 */
-/* 20 */
-/* 21 */
-/* 22 */
-/* 23 */
-/* 24 */
-/* 25 */
-/* 26 */
-/* 27 */
-/* 28 */
-/* 29 */
-/* ABOUT SECTION STARTS HERE */
-/* ABOUT SECTION STARTS HERE */
-/* ABOUT SECTION STARTS HERE */
-
-
-
-
-
-
 .landing-page-about-container {
   min-height: 600px;
   height: calc(100vh);
@@ -822,46 +674,6 @@ footer {
 }
 
 
-
-
-
-
-/* LANDING SECTION ENDS HERE */
-/* LANDING SECTION ENDS HERE */
-/* LANDING SECTION ENDS HERE */
-/* 0 */
-/* 1 */
-/* 2 */
-/* 3 */
-/* 4 */
-/* 5 */
-/* 6 */
-/* 7 */
-/* 8 */
-/* 9 */
-/* 10 */
-/* 11 */
-/* 12 */
-/* 13 */
-/* 14 */
-/* 15 */
-/* 16 */
-/* 17 */
-/* 18 */
-/* 19 */
-/* 20 */
-/* 21 */
-/* 22 */
-/* 23 */
-/* 24 */
-/* 25 */
-/* 26 */
-/* 27 */
-/* 28 */
-/* 29 */
-/* CONTACT SECTION STARTS HERE */
-/* CONTACT SECTION STARTS HERE */
-/* CONTACT SECTION STARTS HERE */
 
 
 
@@ -911,51 +723,6 @@ footer {
     width: 100%;
   }
 }
-
-
-
-
-
-
-/* CONTACT SECTION ENDS HERE */
-/* CONTACT SECTION ENDS HERE */
-/* CONTACT SECTION ENDS HERE */
-/* 0 */
-/* 1 */
-/* 2 */
-/* 3 */
-/* 4 */
-/* 5 */
-/* 6 */
-/* 7 */
-/* 8 */
-/* 9 */
-/* 10 */
-/* 11 */
-/* 12 */
-/* 13 */
-/* 14 */
-/* 15 */
-/* 16 */
-/* 17 */
-/* 18 */
-/* 19 */
-/* 20 */
-/* 21 */
-/* 22 */
-/* 23 */
-/* 24 */
-/* 25 */
-/* 26 */
-/* 27 */
-/* 28 */
-/* 29 */
-/* TEAM SECTION STARTS HERE */
-/* TEAM SECTION STARTS HERE */
-/* TEAM SECTION STARTS HERE */
-
-
-
 
 
 
@@ -1151,6 +918,38 @@ footer {
 
 
 
+.thumbnail:hover{
+  opacity: 0.1;
+  cursor:pointer;
+
+}
+
+.ccc {
+  position: relative;
+  }
+  .fa-youtube { 
+  position: absolute;
+  font-size:60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display:none;
+  }
+ 
+.thumbnail {
+  display: block;
+  transition:0.5s all;
+}
+
+.thumbnail:hover + .youtube-icon-tb {
+  display:block;
+  transition:0.5s all;
+}
+
+.youtube-icon-tb {
+  display:none;
+  transition:0.5s all;
+  }
 
 
 .product-box-container {
@@ -1158,7 +957,7 @@ footer {
   top: 0;
   transition: 0.5s;
   padding-bottom: 5px;
-  background: #eeeeee;
+  background: #ffffff;
   border-radius: 5px;
 }
 .product-box-container:hover {
@@ -1234,15 +1033,7 @@ footer {
 /* 29 */
 /* DESCRIPTION SECTION STARTS HERE */
 /* DESCRIPTION SECTION STARTS HERE */
-/* DESCRIPTION SECTION STARTS HERE */
-
-
-
-
-
-
-
-.bullet-point {
+/* DESCRIPTION SECTION STARTS HERE */.bullet-point {
   display: block;
   margin: 0;
   padding: 0;
@@ -1403,4 +1194,125 @@ footer {
   .products-section {
     height: 400px;
   }
+}
+h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 150px;
+  margin-bottom: 75px;
+}
+.how-to-code {
+  border: 2px solid black;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: block;
+}
+.models {
+  text-align: center;
+  margin-top: 100px;
+}
+.first-model,
+.middle-model {
+  height: 500px;
+  width: 320px;
+  display: inline-block;
+}
+.first-model {
+  margin-right: 10px;
+}
+.middle-model {
+  margin-left: 10px;
+}
+@media screen and (max-width: 710px) {
+  .first-model,
+  .middle-model {
+    height: 100%;
+    width: 75%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .first-model {
+    margin-right: 0px;
+    margin-bottom: 65px;
+  }
+  .middle-model {
+    margin-left: 0px;
+  }
+}
+.subscribeTitle {
+  color: black;
+  font-size: 40px;
+  font-weight: 800;
+  display: block;
+  margin: 0 auto;
+}
+.product-top iframe {
+  width: 100%;
+  height: 315px;
+  transition: 0.5s;
+}
+@media screen and (max-width: 1300px) {
+  .subscribeTitle {
+    width: 75%;
+    font-size: 25px;
+  }
+  .product-top iframe {
+    width: 100%;
+    height: 250px;
+    transition: 0.5s;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .product-top iframe {
+    width: 100%;
+    height: 150px;
+    transition: 0.5s;
+  }
+}
+@media screen and (max-width: 750px) {
+  .product-top iframe {
+    width: 100%;
+    height: 175px;
+  }
+}
+.product-top {
+  width: 100%;
+}
+.product-top img {
+  width: 100%;
+  transition: 0.5s;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.product-credits img {
+  width: 50%;
+  transition: 0.5s;
+}
+.product-img img {
+  width: 100%;
+  transition: 0.5s;
+}
+.product-img img:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+.product-bottom .fa {
+  color: black;
+  font-size: 10px;
+}
+.product-bottom h3 {
+  color: black;
+  font-family: "Avenir";
+  font-weight: bold;
+  font-size: 20px;
+}
+.product-bottom h5 {
+  color: black;
+  font-family: "Avenir";
+  padding-bottom: 10px;
+  font-size: 15px;
 }

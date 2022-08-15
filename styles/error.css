@@ -1,0 +1,51 @@
+.landing-about .landing-error-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  width: 75%;
+}
+h1 {
+  font-size: 30px;
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  margin: 20px auto;
+}
+p {
+  color: white;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 570px) {
+  .landing-about .landing-error-container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+@media (max-width: 300px) {
+  h1 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 255px) {
+  h1 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
