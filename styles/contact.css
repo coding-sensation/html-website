@@ -1,0 +1,15 @@
+body{
+    background: #eee; 
+}
+
+.header a{
+    color: white;
+}
+
+.fas fa-comments language-icon-middle{
+    font-size: 150px;
+}
+
+#contactUs{
+    text-decoration: underline;
+}
