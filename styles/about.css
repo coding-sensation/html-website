@@ -1,0 +1,18 @@
+body{
+    background: #eee; 
+}
+.header a{
+    color: white;
+}
+
+.fas fa-users language-icon-middle{
+    font-size: 150px; 
+}
+
+.copyright{
+    white-space: nowrap;
+}
+
+.aboutUs{
+    text-decoration: underline;  
+}
