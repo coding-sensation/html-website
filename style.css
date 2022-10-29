@@ -55,11 +55,6 @@ body {
   margin-top: 25px;
   width: 100%;
 }
-
-.posts-section {
-  margin-top: 150px;
-  margin-bottom: 250px;
-}
 .how-to-code-image {
   border: 2px solid black;
   width: 100%;
@@ -598,6 +593,7 @@ footer {
   background: black;
   cursor: pointer;
   border-radius: 15px;
+  margin:5px;
 }
 .post:hover {
   opacity: 0.9;
